@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  dns-proxy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "53:5354/udp" # Map UDP port for DNS traffic
+      - "53:5354" # Map UDP port for DNS traffic
+    restart: always     # Ensure the service restarts on failure
+    container_name: dns-proxy
