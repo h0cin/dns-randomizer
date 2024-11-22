@@ -41,9 +41,10 @@ This is a simple DNS proxy server built using Python and `dnspython`. It interce
 ## Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/dns-proxy.git
-   cd dns-proxy
+```bash
+git clone https://github.com/yourusername/dns-proxy.git
+cd dns-proxy
+```
 
 2. Build the container using docker-compose:
 ```bash
@@ -57,11 +58,10 @@ docker-composte up -d
 
 ## Usage
 
-```
-bash
-dig @127.0.0.1 example.com CNAME
-dig @127.0.0.1 example.com NS
-dig @127.0.0.1 example.com SOA
+```bash
+$ dig @127.0.0.1 example.com CNAME
+$ dig @127.0.0.1 example.com NS
+$ dig @127.0.0.1 example.com SOA
 ```
 
 ### Example Output
